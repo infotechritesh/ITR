@@ -1,0 +1,691 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    flex-wrap: wrap;
+}
+
+body {
+    background: rgb(230, 230, 230);
+}
+
+header {
+    display: block;
+    width: 100%;
+    height: 130px;
+    background: white;
+    position: fixed;
+    z-index: 99;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+nav {
+    padding: 8px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    padding: 12px;
+    margin-right: 80px;
+}
+
+nav ul li {
+    font-size: 20px;
+    font-weight: 600;
+    list-style: none;
+    margin-left: 20px;
+    transition: all ease 1s;
+    position: relative;
+    cursor: pointer;
+    color: rgb(84, 83, 83);
+}
+
+nav ul li i {
+    margin-top: 2px;
+    font-size: 25px;
+    font-weight: 600px;
+    display: none;
+}
+
+nav ul li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: rgb(58, 58, 225);
+    bottom: -3px;
+    transition: all ease 0.5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+nav ul li:hover {
+    color: black;
+}
+
+nav .logo {
+    display: flex;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+nav .logo img {
+    animation: img 1s infinite;
+}
+
+@keyframes img {
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(20%);
+    }
+}
+
+nav .logo h3 {
+    font-size: 38px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 600;
+    margin-left: 30px;
+    color: rgb(43, 42, 42);
+    animation: logo 1s infinite;
+}
+
+nav .logo h3 span {
+    color: rgb(58, 58, 225);
+}
+
+@keyframes logo {
+    from {
+        top: 0;
+    }
+
+    to {
+        transform: translate(0, -10%);
+    }
+}
+
+.cate-nav {
+    display: flex;
+}
+
+.cate-nav p {
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 42%;
+    margin-top: 10px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+}
+
+.cate-nav div {
+    display: flex;
+    width: 600px;
+    position: absolute;
+    margin-left: 20%;
+}
+
+.cate-nav ul {
+    display: flex;
+    color: rgb(27, 26, 26);
+    padding: 15px;
+    margin-left: 35%;
+}
+
+.cate-nav ul li {
+    list-style: none;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 20px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.cate-nav ul li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: rgb(58, 58, 225);
+    bottom: -5px;
+    transition: all ease 0.5s;
+}
+
+.cate-nav ul li:hover::after {
+    width: 100%;
+    padding: -2px;
+    cursor: pointer;
+}
+
+
+/* Main Content Design  */
+main {
+    flex-wrap: wrap;
+    padding: 0;
+    display: flex;
+}
+
+main .main-content {
+    flex-wrap: wrap;
+    padding: 10px;
+    padding-top: 150px;
+    display: flex;
+}
+
+main .card {
+    width: 350px;
+    margin-top: 50px;
+    height: 450px;
+    margin-left: 90px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+main .card img {
+    width: 350px;
+    height: 200px;
+    transition: all ease 0.2s;
+}
+
+main .card:hover img {
+    transform: scale(1.1);
+}
+
+main .card:hover {
+    transform: scale(1.1);
+}
+
+main .card p {
+    padding: 15px;
+    font-size: 17px;
+}
+
+main .card #title {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Autour One', cursive;
+}
+
+
+
+/* CSS */
+main .card #more {
+    font-size: 16px;
+    margin-left: 10px;
+    margin-top: 2px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 120px;
+}
+
+main .card #more:after {
+    content: "";
+    background-color: #ffe54c;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+}
+
+main .card #more:hover:after {
+    top: 0px;
+    left: 0px;
+}
+
+@media (min-width: 768px) {
+    #more {
+        padding: 13px 50px 13px;
+    }
+}
+
+/* Content Show For Html , Css , Javascript and Python */
+/* HTML */
+
+/* CSS */
+
+
+
+/* CSS */
+#btn {
+    background-color: #3DD1E7;
+    border: 0 solid #E5E7EB;
+    box-sizing: border-box;
+    color: #000000;
+    display: flex;
+    font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.75rem;
+    padding: .75rem 1.65rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none #000000 solid;
+    text-decoration-thickness: auto;
+    width: 100%;
+    max-width: 460px;
+    position: relative;
+    cursor: pointer;
+    transform: rotate(-2deg);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-top: 50px;
+    margin-left: 30%;
+    margin-bottom: 100px;
+}
+
+#btn:focus {
+    outline: 0;
+}
+
+#btn:after {
+    content: '';
+    position: absolute;
+    border: 1px solid #000000;
+    bottom: 4px;
+    left: 4px;
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
+}
+
+#btn:hover:after {
+    bottom: 2px;
+    left: 2px;
+}
+
+@media (min-width: 768px) {
+    #btn {
+        padding: .75rem 3rem;
+        font-size: 1.25rem;
+    }
+}
+
+/* Footer Design  */
+footer {
+    background: rgba(100, 100, 111, 0.2);
+    width: 100%;
+    height: 200px;
+    display: flex;
+}
+
+.left,
+.right {
+    padding: 25px;
+    width: 50%;
+}
+
+.left img {
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+    margin-left: 200px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+.right ul {
+    display: flex;
+}
+
+.right ul li,
+.right ul li a {
+    list-style: none;
+    margin-top: 25px;
+    font-size: 40px;
+    color: rgba(203, 9, 241, 0.969);
+    text-decoration: none;
+    margin-left: 25px;
+    position: relative;
+}
+
+.right ul li a::after,
+.right p::after {
+    content: "";
+    width: 0;
+    background-color: rgb(58, 58, 225);
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: all ease 0.5s;
+}
+
+.right ul li a:hover::after {
+    width: 100%;
+}
+
+.right p {
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+    color: rgb(25, 24, 24);
+    margin-top: 25px;
+    margin-left: 15px;
+    font-weight: 600;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* Contact Page Design */
+.contact {
+    margin-bottom: 80px;
+    color: black;
+    padding-top: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#contact {
+    display: none;
+}
+
+.contact .contact-card {
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    margin-left: 22%;
+}
+
+.contact-card .left,
+.contact-card .right {
+    width: 50%;
+    height: 50%;
+}
+
+.contact .contact-card .left {
+    padding: 0;
+}
+
+.contact .contact-card .left img {
+    width: 260px;
+    position: absolute;
+    height: 250px;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+
+.contact .contact-card h3 {
+    font-family: 'Sedgwick Ave', cursive;
+    color: rgb(34, 34, 35);
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.contact .contact-card .right ul {
+    display: flex;
+    color: rgba(203, 9, 241, 0.969);
+    font-size: 65px;
+    font-weight: 600px;
+}
+
+.contact .contact-card .right ul li a {
+    color: rgba(203, 9, 241, 0.969);
+    font-size: 35px;
+}
+
+.contact .contact-card .right a {
+    text-decoration: none;
+    font-size: 20px;
+    color: chocolate;
+    font-family: 'Roboto Mono', monospace;
+    animation: mail 0.5s infinite;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+/* Blogs Section Desing */
+.blogs {
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+#blogs {
+    display: none;
+}
+
+.blogs .bg-content {
+    padding-top: 150px;
+}
+
+.blogs .bg-card {
+    width: 1000px;
+    margin-bottom: 100px;
+    height: 380px;
+    margin-left: 10%;
+    background: rgb(244, 242, 242);
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.blogs .bg-card .line-1 {
+    width: 1000px;
+    height: 50px;
+    padding: 15px;
+}
+
+.blogs .bg-card .line-1 p {
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.blogs .bg-card .line-2 {
+    width: 1000px;
+    height: 50px;
+    display: flex;
+    margin-top: 2px;
+}
+
+.blogs .bg-card .line-2 img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.blogs .bg-card .line-2 ul {
+    margin-left: 10px;
+    display: flex;
+    margin-top: 15px;
+}
+
+.blogs .bg-card .line-2 ul li {
+    list-style: none;
+    font-size: 18px;
+    color: rgb(112, 108, 108);
+    margin-left: 10px;
+}
+
+.blogs .bg-card ul span {
+    width: 5px;
+    height: 5px;
+    margin-left: 10px;
+    margin-top: 8px;
+    font-size: 0px;
+    border-radius: 50%;
+    background: rgb(112, 108, 108);
+}
+
+.blogs .bg-card .line-3 {
+    width: 1000px;
+    padding: 10px;
+    height: 200px;
+}
+
+.blogs .bg-card .line-3 p {
+    font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: justify;
+    line-height: 32px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(63, 60, 60);
+    font-weight: normal;
+}
+
+.blogs .bg-card .line-4 {
+    width: 1000px;
+    height: 50px;
+}
+
+.blogs .bg-card .line-4 button {
+    width: 150px;
+    height: 50px;
+    background: rgba(203, 9, 241, 0.969);
+    border-radius: 8px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    margin-left: 10px;
+    transition: all ease 0.2s;
+}
+
+.blogs .bg-card .line-4 button:hover {
+    background: rgba(72, 5, 85, 0.969);
+}
+
+/* ALL Subject Note Web Page Structure */
+.container {
+    width: 100%;
+    padding: 20px;
+    padding-top: 150px;
+    background: white;
+}
+
+#allsub {
+    display: none;
+}
+
+.container .sub-title {
+    width: 100%;
+    height: 60px;
+}
+
+.container .sub-title h1 {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 2px;
+    margin-left: 25px;
+    font-weight: 600;
+    font-size: 42px;
+}
+
+.container .sub-descri {
+    width: 100%;
+    padding: 2px;
+    margin-top: 10px;
+}
+
+.container .sub-descri p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+    font-weight: normal;
+    margin-left: 10px;
+    color: #444444;
+    margin-right: 10px;
+}
+
+/* Tag Cloud's Design */
+.tag{
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    background: white;
+}
+.tag h2{
+    font-size: 25px;
+    color: rgb(84, 83, 83);
+}
+.tag .hr{
+    position: absolute;
+    height: 5px;
+    background: rgba(203, 9, 241, 0.969);
+    width: 800px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.tag .tag-cloud{
+    padding: 20px;
+    margin-top: 50px;
+}
+.tag .tag-cloud a{
+    text-decoration: none;
+    background: rgba(249, 245, 245, 0.517);
+    text-align: justify;
+    margin-left: 20px;
+    font-size: 16px;
+    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid rgb(84, 84, 84);
+    width: 150px;
+    color: rgb(211, 202, 202);
+    transition: all ease 0.5s;
+    font-family: 'Dancing Script', cursive;
+}
+.tag .tag-cloud a:hover{
+    color: rgb(97, 96, 96);
+    padding: 50px;
+}
+
+
+/* More Projects Hidden  */
+#show-1,
+#show-2,
+#show-3,
+#show-4,
+#show-5,
+#show-6,
+#show-7,
+#show-8,
+#show-9,
+#show-10,
+#show-11,
+#show-12,
+#show-13,
+#show-14,
+#show-15,
+#show-16,
+#show-17,
+#show-18,
+#show-19,
+#show-20,
+#show-21 {
+    display: none;
+}
+
+/*  */
