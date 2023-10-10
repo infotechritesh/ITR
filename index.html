@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="logo">
+    <title id="title"> Home | InfoTech Ritesh </title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="app.css">
+    <link rel="icon" href="images/logo.jpg" type="image/png" style="border-radius: 50%;">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.jpg" alt="" width="50px" height="50px" style="border-radius: 50%;">
+                <h3>I<span>T</span>R</h3>
+            </div>
+            <ul>
+                <li onclick="home(),active()" id="active">Home</li>
+                <li onclick="bg()" id="">Blogs</li>
+                <li onclick="cnt()" id="">Contact</li>
+                <li><i class='bx bx-search'></i></li>
+            </ul>
+        </nav>
+        <hr>
+        <div class="cate-nav">
+            <p id="con-page"></p>
+            <div id="con-ul">
+                <ul>
+                    <li onclick="htmlsub()">HTML</li>
+                    <li onclick="csssub()">CSS</li>
+                    <li onclick="jssub()">JavaScript</li>
+                    <li onclick="pysub()">Python</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <div class="main-content" id="main-content-html">
+            <div class="card">
+                <img id="cardImage" src="images/html/html1.png" alt="Card Image 1">
+                <p id="title"> Youtube Channel Clone </p>
+                <p id="descri">In this Project, We are create youtube channel clone using html , css and javascript.</p>
+                <p id="more">Read More</p>
+            </div>
+            <div class="card">
+                <img src="images/html/html2.png" alt="">
+                <p id="title"> Movie Website </p>
+                <p id="descri">In this Project, We are Movie Website like disney hotstar , Neftflix and etc.. using html
+                    , css and javascript.</p>
+                <p id="more">Read More</p>
+            </div>
+            <div class="card">
+                <img src="images/html/html3.png" alt="">
+                <p id="title"> Portfolio Website </p>
+                <p id="descri">In this Project, We are create personal portfolio website for your services , contact and
+                    etc.. using html , css and javascript.</p>
+                <p id="more">Read More</p>
+            </div>
+            <div class="card">
+                <img src="images/html/html4.png" alt="">
+                <p id="title"> Blogs Website Home Page </p>
+                <p id="descri"> Today are create to blogs website with personal project are show all people make to html
+                    , css and javascript.</p>
+                <p id="more">Read More</p>
+            </div>
+            <div class="card">
+                <img src="images/html/html5.png" alt="">
+                <p id="title"> Portfolio Top Page Create </p>
+                <p id="descri"> We are create personal portfolio top home page using html , css and javascript.</p>
+                <p id="more">Read More</p>
+            </div>
+        </div>
+    </main>
+    <button id="btn" class="show more" onclick="show()">Show More</button>
+
+
+
+    <!-- Contact Page -->
+    <div class="contact" id="contact">
+        <div class="contact-content">
+            <div class="contact-card">
+                <div class="left">
+                    <img src="images/logo.jpg" alt="">
+                </div>
+                <div class="right">
+                    <h3>Social Contact :-</h3>
+                    <ul>
+                        <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                        <li><a href="#"><i class='bx bxl-youtube'></i></a></li>
+                        <li><a href="#"><i class='bx bxl-instagram-alt'></i></a></li>
+                        <li><a href="mailto:rkthakre554@gmail.com"><i class='bx bxs-envelope'></i></a></li>
+                        <li><a href="#"><i class='bx bxl-github'></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Blogs Content -->
+    <div class="blogs" id="blogs">
+        <div class="bg-content">
+            <div class="bg-card">
+                <div class="line-1">
+                    <p>Create Movie Website</p>
+                </div>
+                <div class="line-2">
+                    <img src="images/logo.jpg" alt="">
+                    <ul>
+                        <li>InfoTech Ritesh</li>
+                        <span></span>
+                        <li> 12 September, 2023</li>
+                    </ul>
+                </div>
+                <div class="line-3">
+                    <p>In India, the popularity of online trading has helped transform the financial landscape. This has
+                        led
+                        to over 20% of all trading is now done via mobile through trading apps. In line with this,
+                        another
+                        development many traders have highlighted is the use of algorithmic trading systems to take
+                        advantage of ever-changing market opportunities. To date, algorithmic trading systems are used
+                        in up
+                        to 60% of all trading volume.</p>
+                </div>
+                <div class="line-4">
+                    <button id="read-bg">Read more</button>
+                </div>
+            </div>
+            <div class="bg-card">
+                <div class="line-1">
+                    <p>How TO Build Server Using Python.</p>
+                </div>
+                <div class="line-2">
+                    <img src="images/logo.jpg" alt="">
+                    <ul>
+                        <li>InfoTech Ritesh</li>
+                        <span></span>
+                        <li> 12 September, 2023</li>
+                    </ul>
+                </div>
+                <div class="line-3">
+                    <p>In India, the popularity of online trading has helped transform the financial landscape. This has
+                        led
+                        to over 20% of all trading is now done via mobile through trading apps. In line with this,
+                        another
+                        development many traders have highlighted is the use of algorithmic trading systems to take
+                        advantage of ever-changing market opportunities. To date, algorithmic trading systems are used
+                        in up
+                        to 60% of all trading volume.</p>
+                </div>
+                <div class="line-4">
+                    <button id="read-bg">Read more</button>
+                </div>
+            </div>
+            <div class="bg-card">
+                <div class="line-1">
+                    <p>How TO Build Server Using Python.</p>
+                </div>
+                <div class="line-2">
+                    <img src="images/logo.jpg" alt="">
+                    <ul>
+                        <li>InfoTech Ritesh</li>
+                        <span></span>
+                        <li> 12 September, 2023</li>
+                    </ul>
+                </div>
+                <div class="line-3">
+                    <p>In India, the popularity of online trading has helped transform the financial landscape. This has
+                        led
+                        to over 20% of all trading is now done via mobile through trading apps. In line with this,
+                        another
+                        development many traders have highlighted is the use of algorithmic trading systems to take
+                        advantage of ever-changing market opportunities. To date, algorithmic trading systems are used
+                        in up
+                        to 60% of all trading volume.</p>
+                </div>
+                <div class="line-4">
+                    <button id="read-bg">Read more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ALL Categories Bar Such as Javascript , Python and Html , css and Etc Comming Soon !! Structure Desing That's Line Then-->
+    <div class="container" id="allsub">
+        <div class="sub-title">
+            <h1 id="subject-title"></h1><br>
+            <hr>
+        </div><br><br>
+        <div class="sub-descri">
+            <h3>Introduction </h3><br>
+            <p id="sub-descri"></p>
+            <br>
+            <br>
+            <h3>History of <span id="h-sub"></span></h3><br>
+            <p id="sub-descri-history"><br></p>
+            <br>
+            <br>
+            <h3>Conclusion</h3><br>
+            <p id="sub-descri-conclusion"></p>
+        </div>
+    </div>
+
+
+    <!-- Tag Cloud's-->
+    <div class="tag">
+        <h2> Tag Cloud <span class="hr"></span></h2>
+        <div class="tag-cloud">
+            <a href="#">Html&Css</a>
+            <a href="#">Javascript</a>
+            <a href="#">Python</a>
+            <a href="#">Clone's</a>
+            <a href="#">Portfolio</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="left">
+            <img src="images/logo.jpg" alt="">
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="#"><i class='bx bxl-instagram-alt'></i></a></li>
+                <li><a href="#"><i class='bx bxl-youtube'></i></a></li>
+                <li><a href="#"><i class='bx bxl-github'></i></a></li>
+            </ul>
+
+            <p id="copy">Developed By InfoTech Ritesh</p>
+        </div>
+    </footer>
+
+    <!-- Javacsript -->
+    <script src="main.js"></script>
+</body>
+
+</html>
